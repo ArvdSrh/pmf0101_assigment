@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TASTY KITCHEN</title>
+    <meta name="description"
+        content="A place to get reviews about various Malaysian cousines and dishes, restaurant collections and local dishes.">
+    <meta name="keywords"
+        content="malaysia, food, review, local, dishes, restaurant, culture, cousines, malay, indian, chinese, yelp, zomato">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://vjs.zencdn.net/7.18.1/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="containerr">
+        <div class="nav-arrange">
+            <ul class="nav-tab">
+                <li class="nav-btn" style="border-bottom: 2px solid #edc500;">
+                    <a class="nav-link">Home</a>
+                </li>
+                <li class="nav-btn">
+                    <a class="nav-link" href="discover.html">Discover</a>
+                </li>
+                <li class="nav-btn">
+                    <a class="nav-link" href="write-review.html">Write a Review</a>
+                </li>
+                <li class="nav-btn">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div style="padding-top: 150px; text-align: center; color: #edc500;">
+                <h style="font-size: 124px;" href="#">TASTY KITCHEN</h>
+            </div>
+        </div>
+    </div>
+    <center>
+        <h2 class="cuisine-title" style="margin-bottom: 20px; font-size: 40px;">Today's Video</h2>
+        <video id="my-video" class="video-js" controls preload="auto" width="954" height="530" poster="css/img/thumbnail.jpg" data-setup="{}">
+            <source src="multimedia_content_video/TT3V_Group2_Cooking_Marketing_Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <a class="cuisine-subtitle" style="cursor: pointer; object-position: bottom;" onclick="alert('Ingredients:\n\nFlour\nEgg\nChicken Slices\nButter\nGarlic\nCurry leaves\nChili\nCreamer\nPepper\nSalt\nCorn Starch')">Click to view Ingredients</a>
+        
+        <div class="container-mid" style="margin-top: 80px;">
+            <div class="container-box-row">
+                <div class="col-1">
+                    <a href="discover.html" class="col-1-a" id="col-1-a">
+                        <div class="col-box col-box-inner" width="100%">
+                            <img class="col-img"
+                                src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/b0108eaaf115/assets/img/home/hero_photos/xetgX7L_0aF2pxuTh4gARA.jpg"
+                                loading="lazy">
+                        </div>
+                        <div class="col-text" id="col-text">
+                            <ul class="list-bullet">
+                                <li class="col-title">Discover</li>
+                                <li class="col-subtitle">View why local cuisines are better</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <a href="collections.html" class="col-1-a" id="col-2-a">
+                        <div class="col-box col-box-inner" width="100%">
+                            <img class="col-img"
+                                src="https://b.zmtcdn.com/webFrontend/95f005332f5b9e71b9406828b63335331585809309.png?fit=around|402:360&amp;crop=402:360;*,*"
+                                loading="lazy">
+                        </div>
+                        <div class="col-text" id="col-text2">
+                            <ul class="list-bullet">
+                                <li class="col-title">Collections</li>
+                                <li class="col-subtitle">Find various restaurants around you</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="cuisine-row">
+                <div class="cuisine-text">
+                    <h2 class="cuisine-title">Cuisines</h2>
+                    <h6 class="cuisine-subtitle">Explore the top cuisines of different cultures in Malaysia</h6>
+                </div>
+                <div class="cuisine-img-select-row">
+                    <div class="cuisine-img-select">
+                        <table>
+                            <tr>
+                                <th>West Malaysia</th>
+                                <th>East Malaysia</th>
+                            </tr>
+                            <tr>
+                                <td>Malay Cuisine</td>
+                                <td>Kadazan Cuisine</td>
+                            </tr>
+                            <tr>
+                                <td>Indian Cuisine</td>
+                                <td>Dusun Cuisine</td>
+                            </tr>
+                            <tr>
+                                <td>Chinese Cuisine</td>
+                                <td>Western Cuisine</td>
+                            </tr>
+                        </table>
+                        <section class="cuisine-img">
+                            <a class="cuisine-select" href="cuisines.html">
+                                <div height="32rem" class="cuisine-select-inner">
+                                    <img alt="Chinese"
+                                        src="https://images.ctfassets.net/u128j5s4q9gv/2bK9rt7EOHeKC3UDCm7p8U/967cb8f58be231da997389e5c6d203d7/chinese-food.jpg"
+                                        loading="lazy" class="cuisine-section-inner-img">
+                                </div>
+                                <section class="cuisine-select-text">
+                                    <section class="cuisine-select-text-inner">
+                                        <p class="cuisine-select-text-inner-text">More info</p>
+                                    </section>
+                                </section>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+    </center>
+
+
+    <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
+</body>
+
+</html>

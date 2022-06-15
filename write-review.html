@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Write a Review - TASTY KITCHEN</title>
+    <meta name="description"
+        content="A place to get reviews about various Malaysian cousines and dishes, restaurant collections and local dishes.">
+    <meta name="keywords"
+        content="malaysia, food, review, local, dishes, restaurant, culture, cousines, malay, indian, chinese, yelp, zomato">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/sub.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="containerr">
+        <div class="nav-arrange">
+            <ul class="nav-tab">
+                <li class="nav-btn">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-btn">
+                    <a class="nav-link" href="discover.html">Discover</a>
+                </li>
+                <li class="nav-btn" style="border-bottom: 3px solid #c5a400;">
+                    <a class="nav-link">Write a Review</a>
+                </li>
+                <li class="nav-btn">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Middle -->
+    <div class="container-mid">
+
+        <!-- Write Review -->
+        <div class="cuisine-row">
+            <h2 class="cuisine-title">Write Your Own Review</h2>
+            <div class="cuisine-bottom-line"></div>
+            <div class="cuisine-subtitle-row" style="margin-bottom: 25px;">
+                <h6 class="cuisine-subtitle"
+                    style="color: rgb(107, 107, 107); font-size: 1.3rem; margin-top: 45px; margin-bottom: 50px;">
+                    Have another opinion about a restaurant or you discovered a new local
+                    food stall, and you wanna share your thoughts to others? You can now write your own review or
+                    thought about a dish or a restaurant by just filling up the review form below. After filling it
+                    up, it'll take only a day or two before being uploaded to our site.
+                </h6>
+            </div>
+
+            <!-- Review Form -->
+            <div class="container-form">
+                <form action="javascript:void(0);">
+                    <label for="fname">Name</label>
+                    <input type="text" id="name" name="firstname" placeholder="Your name...">
+                    <label for="lname">Email</label>
+                    <input type="text" id="email" placeholder="Your email...">
+                    <label for="lname">Restaurant Name</label>
+                    <input type="text" id="rname" placeholder="Restaurant name...">
+                    <label for="lname">Address</label>
+                    <input type="text" id="address" placeholder="Restaurant address...">
+                    <label for="country">State</label>
+                    <select id="country" name="country">
+                        <option value="x" disabled>Choose a state</option>
+                        <option value="kl">WP - Kuala Lumpur</option>
+                        <option value="putrajaya">WP - Putrajaya</option>
+                        <option value="labuan">WP - Labuan</option>
+                        <option value="Selangor">Selangor</option>
+                        <option value="Perak">Perak</option>
+                        <option value="Penang">Penang</option>
+                        <option value="Pahang">Pahang</option>
+                        <option value="Perlis">Perlis</option>
+                        <option value="Johor">Johor</option>
+                        <option value="Kedah">Kedah</option>
+                        <option value="Kelantan">Kelantan</option>
+                        <option value="Malacca">Malacca</option>
+                        <option value="n9">Negeri Sembilan</option>
+                        <option value="Terengganu">Terengganu</option>
+                        <option value="Sabah">Sabah</option>
+                        <option value="Sarawak">Sarawak</option>
+                    </select>
+                    <label for="lname">Main Dish</label>
+                    <input type="text" id="maindish" placeholder="Your favourite dish...">
+                    <label for="subject">What's your opinion?</label>
+                    <textarea id="subject" name="subject" placeholder="Explain more about your experience..."
+                        style="height:200px"></textarea>
+                    <button class="submit-btn" id="submit-btn" onclick="alert('Submitted')">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

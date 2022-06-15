@@ -1,0 +1,333 @@
+
+/* div, body, li and a tags to have these styles */
+div, body, li, a {
+    font-family: Arial, Helvetica, sans-serif; /* Font */
+    margin: 0; /* Leave 0 spaces around it */
+    border: 0; /* Remove the border if there is */
+    font-size: 100%; /* Text size */
+}
+
+* {
+  box-sizing: border-box; /* To make all the boxes look alligned */
+}
+
+
+
+
+/**************************/
+/*       Scrollbar        */
+/**************************/
+::-webkit-scrollbar {
+  width: 6px; /* The width of the scrollbar*/
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0px; /* The radius of its corners */
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #edc500; /* Its color */
+  border-radius: 10px; /* The radius of its corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  transition: 0.3s; /* When hovering, it changes to yellow after 0.3 seconds */
+  background: #c5a400;
+}
+/**************************/
+/*           End          */
+/**************************/
+
+
+
+
+
+
+/************************************/
+/*      The Upper Part of Index     */
+/************************************/
+.containerr {
+    background-image: url(img/container.jpg); /* Add a background picture */
+    background-size: cover; /* It shows the whole picture */
+    background-position: 50%; /* Shows more of the middle part of the picture */
+    padding-top: 30px; /* Leave about 30 pixels of space above */
+    height: 570px; /* The height of the container */
+    position: relative;
+    margin-bottom: 80px; /* Leave some space between the upper part and middle part of the page */
+}
+
+
+.nav-tab { /* The navigation part */
+    padding-left: 80px; /* Leave some space towards the left, the values are just estimated */
+}
+
+.nav-btn { /* Each navigation button */
+    display: inline-block; /* Make sure all are in the same line */
+    margin-right: 2px; /* Space between each buttons */
+    padding: 9px 30px 10px; /* Leave some space above and below */
+}
+
+.nav-link { /* The words inside the button */
+    font-family: Arial, Helvetica, sans-serif; /* Font */
+    text-decoration: none; /* To make sure the text doesnt have any underline */
+    padding-bottom: 8px;
+    color: #fff; /* Text color */
+    display: block;
+    font-size: 15px; /* Text size */
+    font-weight: 700; /* Thickness of the text */
+}
+
+.nav-btn:hover { /* when ur mouse on the button, what happens */
+    transition: 0.20s;
+    border-bottom: 2px solid #edc500; /* a yellow underline will be visible */
+}
+
+span { /* The title (MAKANLAH) */
+    font-family: Arial, Helvetica, sans-serif; /* Font */
+    text-align: center; /* Allign text to the middle */
+    color: #edc500; /* Text color */
+    letter-spacing: 8px; /* Spaces between each letters */
+}
+/******************************/
+/*             End            */
+/******************************/
+
+
+
+
+
+
+/*************************************/
+/*    The Middle Part of ALL Page    */
+/*************************************/
+.container-mid {
+  max-width: 1760px; /* limit for width and height, the other box wont go anywhere more than the limit*/
+  max-height: initial;
+  margin: 0px auto; /* make sure the left and right of the middle part is the same (middle) */
+}
+
+.container-mid a { /* all the words of tag "a" in the middle part*/
+  text-decoration: none /* To prevent the text or phrase from being underlined or anything like that */
+}
+
+.container-mid div {
+  font-size: 25.6px; /* Text size of all the text inside the middle part */
+}
+
+.container-box-row {  /* Discover and collection part */
+  width: 100%; /* the width of the box */
+  margin-bottom: 80px; /* Leave space between this part and the cuisines part */
+}
+/******************************/
+/*            End             */
+/******************************/
+
+
+
+
+
+/*************************************/
+/*      The Bottom Part of Index     */
+/*************************************/
+.col-1 { /* The 2 box */
+  display: inline-block; /* For them to be in the same row */
+  max-height: 10%; /* limit for the height */
+  max-width: 40%; /* limit for the width */
+  width: 100%; /* use 100% of the max width */
+  -webkit-box-flex: 0;
+  padding: 0px 70px 20px 0px; /* leave space between both box */
+}
+
+.col-1-a {
+  display: block; /* display its content together, example: the picture and the words */
+  text-decoration: none; /* no any underline etc */
+  position: relative; /* normal positioning */
+}
+
+
+.col-box { /* The picture in the box */
+  border-radius: 19.2px; /* will have round like border */
+}
+
+.col-box-inner { /* The picture and other content in the box */
+  position: relative; /* normal positioning */
+  max-width: 100%; /* its width limit */
+  width: 100%; /* uses all of its limit */
+  height: 384px; /* its height (the picture) */
+  overflow: hidden; /* any words or picture that exceeds the box will be hidden */
+}
+
+.col-img { /* picture */
+  width: 100%; /* use all of the width in the box */
+  height: 100%; /* use all of the height in the box */
+  object-fit: cover; /* to avoid the picture to look compact */
+  border-radius: inherit; /* the picture border will also look like the box's border but its not visible */
+}
+ 
+.col-text { /* the text inside inside the box/unser the picture */
+  width: 100%; /* uses all the width of the box */
+  position: absolute; /* positioning together with the box */
+  bottom: 0px; /* to make sure its in the box with the picture */
+  left: 0px;
+  background: white; /* white background */
+  border: 1px solid rgb(232, 232, 232); /* the border's color (grey like color) */
+  border-radius: 0px 0px 19.2px 19.2px; /* the radius of the white box its in */
+  text-align: left; /* allign the text all to the left */
+}
+
+.list-bullet {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-bullet li {
+    position: relative;
+    padding-left: 30px;
+    margin-left: 20px;
+}
+
+.list-bullet li:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-image: url('https://cdna.artstation.com/p/assets/images/images/026/819/028/original/ariel-gross-bullet.gif');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.col-text:hover { /* when your mouse is on the text inside the box */
+  background-color: #edc500; /* it changes to yellow in 0.5 seconds */
+  transition: 0.5s;
+}
+
+.col-title { /* Title of the text inside the box */
+  font-family: Okra,Helvetica,sans-serif; /* Font */
+  text-align: left; /* allign it to the left */
+  font-weight: 500; /* its thickness */
+  font-size: 32px; /* title text size */
+  margin: 0px; /* removes the spaces, if present */
+  color: rgb(54, 54, 54); /* title text color */
+}
+
+.col-subtitle { /* Subtitle of the text */
+  font-family: Okra,Helvetica,sans-serif; /* Font */
+  color: rgb(79, 79, 79); /* text color */
+  font-weight: 400; /* its thickness */
+  text-overflow: ellipsis; /* if the text overflows the box, change the overflowed text to ..... */
+  overflow: hidden; /* hides the ..... that exceeds the box */
+  font-size: inherit; /* follows other text size if present */
+  line-height: 1.5;
+  margin: 0px; /* remove any spaces if present */
+}
+
+.cuisine-row { /* The Cuisines Part */
+  margin-bottom: 160px; /* leave space between the cuisines part and anything at the bottom */
+}
+
+.cuisine-title { /* The "Cuisine" title */
+  font-family: Okra,Helvetica,sans-serif; /* Font */
+  font-weight: 500; /* thickness */
+  font-size: 57.6px; /* title size */
+  color: #af9200; /* title color */
+  margin: 0px; /* leave no space with its bottom or above*/
+}
+
+.cuisine-subtitle { /* the subtitle */
+  font-family: Okra,Helvetica,sans-serif; /* Font */
+  font-weight: 300; /* thickness */
+  color: #edc500; /* color */
+  font-size: 28.8px; /* size */
+  margin: 0px; /* 0 spaces with anything bottom or above */
+}
+
+.cuisine-img-select-row { /* the row of the 3 cuisine image */
+  margin-top: 32px; /* leave space between this row and the text above it */
+}
+
+.cuisine-img-select { /* each image box */
+  position: relative; /* normal positioning */
+  max-width: 100%; /* width limit */
+  display: inline-flex; /* make sure the box are beside each other (the same row) */
+  padding: 0px 7.5px 10px 0px; /* space to the left, right, above and below */
+}
+
+.cuisine-img { /* content in the box*/
+  position: relative; /* position the image with the box */
+  width: 50%; /* uses all of the max width */
+}
+
+.cuisine-select {
+  text-decoration: none; /* no any underline etc */
+}
+
+.cuisine-select-inner { /* the box  */
+  border-radius: 9.6px; /* curved like border */
+  position: relative; /* normal position */
+  max-width: 100%; /* width limit */
+  height: 512px; /* height */
+  overflow: hidden; /* hide any overflowing contents */
+}
+
+.cuisine-section-inner-img { /* image in the box */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fit the box, doesnt look compact */
+}
+
+.cuisine-select-text { /* text style in the box */
+  position: absolute; /* position the styles together */
+  top: 0px;
+  left: 0px;
+  border-radius: 9.6px; /* curved border */
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%); /* the dark color gradient */
+}
+
+.cuisine-select-text-inner { /* text part in the box*/
+  color: rgb(255, 255, 255);
+  position: absolute; /* position it together with the styles */
+  bottom: 0px; /* make sure text is at the bottom of the box */
+  width: 100%;
+}
+
+.cuisine-select-text-inner-text { /* text in the box */
+  margin: 0px; /* 0 spaces around */
+  color: rgb(255, 255, 255); /* text color */
+  padding-left: 25.6px; /* more space at left */
+  padding-bottom: 20px; /* more space at the bottom */
+  font-size: 28.8px;
+  width: 100%;
+  font-family: Okra,Helvetica,sans-serif;
+  text-align: left;
+  overflow: hidden; /* hide any overflow even if its the ..... */
+  text-overflow: ellipsis; /* change any overflowing text to ..... */
+}
+
+table {
+  border: 5px solid #d1ae00;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 100px;
+}
+
+th {
+  background-color: #ffe76e;
+}
+
+td, th {
+  border: 1px solid rgb(218, 218, 218);
+  text-align: center;
+  padding: 8px;
+}
+
+/******************************/
+/*            End             */
+/******************************/
